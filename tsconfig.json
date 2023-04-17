@@ -1,0 +1,89 @@
+{
+    "compilerOptions": {
+        /* 目标代码的版本为 ESNext */
+        "target": "ESNext",
+        /* 引入的库包括 DOM 和 ESNext 标准库 */
+        "lib": [
+            "dom",
+            "esnext"
+        ],
+        /* 启用增量编译 */
+        "incremental": true,
+        /* 生成的 JavaScript 文件是否包含调试信息 */
+        "sourceMap": true,
+        /* 是否导入帮助程序以辅助转换 */
+        "importHelpers": true,
+        /* 禁止未使用的局部变量 */
+        "noUnusedLocals": true,
+        /* 禁止未使用的函数参数 */
+        "noUnusedParameters": true,
+        /* 每个函数都必须有返回值 */
+        "noImplicitReturns": true,
+        /* 允许使用装饰器 */
+        "experimentalDecorators": true,
+        /* 允许编译 JavaScript 文件 */
+        "allowJs": true,
+        /* 跳过所有的声明文件检查 */
+        "skipLibCheck": true,
+        /* 允许在模块之间使用 ES 模块的语法 */
+        "esModuleInterop": true,
+        /* 允许从模块中默认导入任何类型 */
+        "allowSyntheticDefaultImports": true,
+        /* 开启所有严格模式的检查 */
+        "strict": true,
+        /* 任何变量都需要有明确的类型 */
+        "noImplicitAny": true,
+        /* 启用 null 检查 */
+        "strictNullChecks": true,
+        /* 禁止 this 上下文的隐式使用 */
+        "noImplicitThis": true,
+        /* 在所有文件名中强制使用一致的大小写 */
+        "forceConsistentCasingInFileNames": true,
+        /* 禁止 switch 语句中的 fallthrough */
+        "noFallthroughCasesInSwitch": true,
+        /* 使用 ES 模块 */
+        "module": "esnext",
+        /* 解析模块的算法 */
+        "moduleResolution": "node",
+        /* 允许编译器将 for...of 编译成使用迭代器 */
+        "downlevelIteration": true,
+        /* 允许导入 JSON 模块 */
+        "resolveJsonModule": true,
+        /* 每个文件作为独立的模块 */
+        "isolatedModules": true,
+        /* 不生成任何编译输出 */
+        "noEmit": true,
+        /* 使用 React JSX 语法 */
+        "jsx": "react-jsx",
+        /* 根目录 */
+        "rootDir": ".",
+        /* 模块的基本路径 */
+        "baseUrl": ".",
+        /* 模块解析路径别名 */
+        "paths": {
+            "@components/*": [
+                "src/components/*"
+            ],
+            "@assets/*": [
+                "src/assets/*"
+            ],
+            "@pages/*": [
+                "src/pages/*"
+            ],
+            "@layouts/*": [
+                "src/layouts/*"
+            ]
+        }
+    },
+    /* 包含的文件和目录 */
+    "include": [
+        "src",
+        "tests"
+    ],
+    /* 排除的 */
+    "exclude": [
+        "node_modules",
+        "dist",
+        "scripts"
+    ]
+}

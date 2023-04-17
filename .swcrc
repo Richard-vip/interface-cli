@@ -1,0 +1,28 @@
+{
+    "module": {
+        "type": "es6", // 配置模块类型为 es6
+        "ignoreDynamic": true // 忽略动态导入，避免编译器处理复杂的异步依赖关系
+    },
+    "jsc": {
+        "parser": {
+            "syntax": "typescript", // 使用 TypeScript 语法解析器
+            "dynamicImport": true, // 启用动态导入语法
+            "decorators": true, // 启用装饰器语法
+            "tsx": true // 支持解析 .tsx 文件
+        },
+        "transform": {
+            "legacyDecorator": true, // 启用 legacy 装饰器语法
+            // "emitDecoratorMetadata": true,
+            "decoratorMetadata": true, // 启用 decoratorMetadata，使装饰器能够正确编译
+            "react": {
+                "runtime": "automatic", // 配置 React 的运行时
+                "throwIfNamespace": true, // 如果在使用 React 时出现命名空间，则抛出错误
+                "useBuiltins": true // 使用内置的 React 包，避免构建过程中出现重复引入的问题
+            }
+        },
+        "target": "es2015", // 设置编译后的代码目标为 ES2015
+        "loose": true, // 开启宽松模式，尽可能减小编译后代码的体积
+        "externalHelpers": true, // 将辅助函数 externalHelpers 引用到代码中，避免函数重复定义的问题
+        "keepClassNames": false // 不保留类名，减小代码体积
+    }
+}
