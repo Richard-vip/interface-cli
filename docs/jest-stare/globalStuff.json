@@ -1,0 +1,87 @@
+{
+  "bail": 0,
+  "changedFilesWithAncestor": false,
+  "ci": false,
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,ts,tsx}",
+    "!**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "coverageDirectory": "/Users/wangrenjie/Desktop/interface-cli/docs/jest-coverage",
+  "coverageProvider": "babel",
+  "coverageReporters": [
+    "json",
+    "text",
+    "lcov",
+    "clover"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 95,
+      "lines": 95,
+      "statements": 95
+    }
+  },
+  "detectLeaks": false,
+  "detectOpenHandles": false,
+  "errorOnDeprecated": false,
+  "expand": false,
+  "findRelatedTests": true,
+  "forceExit": false,
+  "json": false,
+  "lastCommit": false,
+  "listTests": false,
+  "logHeapUsage": false,
+  "maxConcurrency": 5,
+  "maxWorkers": 7,
+  "noStackTrace": false,
+  "nonFlagArgs": [
+    "index.spec.ts",
+    "test.spec.ts"
+  ],
+  "notify": false,
+  "notifyMode": "failure-change",
+  "onlyChanged": false,
+  "onlyFailures": false,
+  "openHandlesTimeout": 1000,
+  "passWithNoTests": false,
+  "projects": [],
+  "reporters": [
+    [
+      "default",
+      {}
+    ],
+    [
+      "/Users/wangrenjie/Desktop/interface-cli/node_modules/jest-stare/lib/index.js",
+      {
+        "resultDir": "../../docs/jest-stare/",
+        "reportTitle": "jest-stare!",
+        "additionalResultsProcessors": [],
+        "coverageLink": "../jest-coverage/lcov-report/index.html",
+        "jestStareConfigJson": "jest-stare.json",
+        "jestGlobalConfigJson": "globalStuff.json",
+        "resultHtml": "index.html",
+        "resultJson": "jest-results.json"
+      }
+    ]
+  ],
+  "rootDir": "/Users/wangrenjie/Desktop/interface-cli",
+  "runTestsByPath": false,
+  "seed": 1351927298,
+  "skipFilter": false,
+  "snapshotFormat": {
+    "escapeString": false,
+    "printBasicPrototype": false
+  },
+  "testFailureExitCode": 1,
+  "testPathPattern": "index.spec.ts|test.spec.ts",
+  "testSequencer": "/Users/wangrenjie/Desktop/interface-cli/node_modules/@jest/test-sequencer/build/index.js",
+  "updateSnapshot": "new",
+  "useStderr": false,
+  "watch": false,
+  "watchAll": false,
+  "watchman": true,
+  "workerThreads": false
+}

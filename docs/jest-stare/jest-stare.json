@@ -1,0 +1,10 @@
+{
+  "resultDir": "../../docs/jest-stare/",
+  "reportTitle": "jest-stare!",
+  "additionalResultsProcessors": [],
+  "coverageLink": "../jest-coverage/lcov-report/index.html",
+  "jestStareConfigJson": "jest-stare.json",
+  "jestGlobalConfigJson": "globalStuff.json",
+  "resultHtml": "index.html",
+  "resultJson": "jest-results.json"
+}
