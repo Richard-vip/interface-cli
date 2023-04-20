@@ -75,7 +75,7 @@
             ]
         },
         "types": [
-            "cypress"
+            "cypress",
         ]
     },
     /* 包含的文件和目录 */
