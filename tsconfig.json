@@ -73,12 +73,15 @@
             "@layouts/*": [
                 "src/layouts/*"
             ]
-        }
+        },
+        "types": [
+            "cypress"
+        ]
     },
     /* 包含的文件和目录 */
     "include": [
         "src",
-        "tests"
+        "tests",
     ],
     /* 排除的 */
     "exclude": [
